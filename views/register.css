@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+body::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: #1b1b32;
+    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(150, 150, 199, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+main{
+    align-items: center;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #1b1b32;
+}
+
+.glass {
+    background: white;
+    min-height: 80vh; min-width: 60vh;
+    text-align: center;
+    width: 80%;
+    height: 90%;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+    );
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    display: flex;
+  }
+
+  form {
+    display: inline-block;
+}
+
+header {
+    color: #fdfdfd;
+    margin: 10px auto 10px;
+}
+
+#registration-form {
+    border-radius: 5px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width:80%; height: 80%;
+    padding: 5px;
+}
+
+div {
+    padding: 10px;
+    margin:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: content;
+}
+
+input,textarea,select {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f3f3;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-block: 10px; 
+    text-indent: 8px;
+}
+
+#name,#email,#number,#comment,select{
+    height: 40px;
+    width: 100%;
+}
+#comment {
+    height:100px;
+}
+
+input[type="checkbox"] {
+    display: inline;
+    height:25px;
+    width: 25px;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+#submit{
+    color: #f3f3f3;
+    background-color:#ceb3e6;
+    margin: 30px auto 50px;
+    height:40px;
+    font-size: 20px;
+    border-radius: 5px;
+    width: 95%;
+    text-align: center;
+}
+
+#submit:hover {
+    background-color: #277C48;
+    background-position: 100% 0;
+    transition: all .4s ease-in-out;
+}
